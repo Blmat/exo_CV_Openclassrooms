@@ -5,6 +5,10 @@
     width: 1230px;
   }
 }
+#conteneur {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 :root {
   --color1: #7450e7;
   --color2: #fffeff;
@@ -12,8 +16,7 @@
   --color4: #41eca4;
   --color5: #133866;
 }
-#conteneur {
-}
+
 /*Mon nom + les titres*/
 h1 {
   font-family: "Pontano Sans", sans-serif;
@@ -44,17 +47,23 @@ h4 {
 /*photo cv*/
 .programming {
   width: 450px;
-  margin-left: 120%;
-  margin-bottom: -1px;
-  margin-top: -250px;
+  position: absolute;
+  margin-left: 780px;
+  margin-top: -300px;
 }
-
+/*logo tete*/
+.tete {
+  width: 650px;
+  position: absolute;
+  margin-left: -700px;
+  margin-top: -480px;
+}
 /*partie en violet*/
 .element_1 {
-  text-align: left;
   padding-top: 5%;
   padding-left: 25%;
   padding-right: 50%;
+  padding-bottom: 151px;
   color: var(--color1);
   font-family: "Pontano Sans", sans-serif;
   color: rgb(255, 255, 255);
@@ -64,27 +73,18 @@ h4 {
 /*partie en blanc "Mes competences" + texte*/
 
 .element_2 {
-  text-align: left;
   font-family: "Slabo 27px", sans-serif;
   color: var(--color3);
-  padding-top: 3%;
-  padding-left: 50%;
-  padding-right: 20%;
-  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-right: 25%;
+  padding-left: 40%;
+  padding-bottom: 151px;
   margin: -51px 0 0 0;
   background: var(--color2);
 }
 
-/*logo tete*/
-.tete {
-  width: 800px;
-  margin: -1350px 0% 0 -950px;
-  padding-top: -300px;
-}
-
 /*la partie en bleu*/
 .element_3 {
-  text-align: left;
   font-family: "Pontano Sans", sans-serif;
   padding-top: 5%;
   padding-bottom: 33%;
@@ -111,6 +111,7 @@ h4 {
 p,
 ul {
   font-size: 2em;
+  text-align: left;
 }
 /*tout ce qui est entouré de "em"*/
 em {
